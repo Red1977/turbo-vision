@@ -72,8 +72,8 @@ const createScene = function () {
              var advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
  
              var button = BABYLON.GUI.Button.CreateImageOnlyButton("but", "https://i.imgur.com/WWzizlq.png");
-             button.width = "1000px";
-             button.height = "1000px";
+             button.width = "100px";
+             button.height = "100px";
              button.color = "transparent"
              button.image.detectPointerOnOpaqueOnly = true;
              button.children[0].detectPointerOnOpaqueOnly = true;
@@ -93,7 +93,7 @@ const createScene = function () {
  
          // This creates a light, aiming 0,1,0 - to the sky (non-mesh)
          const light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
-         light.intensity = 10.0;
+         light.intensity = 7.0;
  
          return scene;
      };
