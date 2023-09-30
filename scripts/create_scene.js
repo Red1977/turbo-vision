@@ -10,7 +10,7 @@ const createScene = function () {
  
          let container = BABYLON.AssetContainer;
  
-         BABYLON.SceneLoader.LoadAssetContainer("http://127.0.0.1:8181/assets/", "pump_bottle_label_camera_sphere.glb", scene, function (container) {
+         BABYLON.SceneLoader.LoadAssetContainer("/assets/", "pump_bottle_label_camera_sphere.glb", scene, function (container) {
              
              container.addAllToScene();
  
@@ -89,7 +89,7 @@ const createScene = function () {
          });
  
          //The background image
-         var layer = new BABYLON.Layer('','http://127.0.0.1:8181/assets/pink_label_render.png', scene, true);
+         var layer = new BABYLON.Layer('','/assets/pink_label_render.png', scene, true);
  
          // This creates a light, aiming 0,1,0 - to the sky (non-mesh)
          const light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
